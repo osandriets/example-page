@@ -1,0 +1,35 @@
+// reboot
+$font-family-base: 'Roboto';
+$font-size-base: 16px;
+
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+
+$line-height-base: 1.2;
+$body-color: #767676;
+$body-bg: #fff;
+$paragraph-margin-bottom: 10px;
+
+$link-color: $body-color;
+$link-decoration: underline;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+
+$table-cell-padding: 10px;
+$table-cell-padding: 10px;
+
+$text-muted: red;
+
+$color-primary: #43b329;
+
+
+//
+
+$white:  #fff !default;
+$black:  #000 !default;
+
+$breakpoints:("": "0px", "s":"480px", "m":"768px", "l":"980px");
