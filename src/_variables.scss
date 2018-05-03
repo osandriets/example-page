@@ -24,3 +24,13 @@ $table-cell-padding: 10px;
 $table-cell-padding: 10px;
 
 $breakpoints:("": "0px", "s":"480px", "m":"768px", "l":"980px");
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}

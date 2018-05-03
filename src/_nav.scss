@@ -36,6 +36,7 @@
   align-items: center;
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 0;
   text-align: center;
 
   &__item {
@@ -46,16 +47,16 @@
   @media screen and (min-width: map-get($breakpoints, m)) {
     flex-direction: row;
 
-    &__item{
+    &__item {
       width: auto;
       border: none;
     }
+
     &__item:not(:last-child)::after {
       border: none;
       content: '|';
     }
   }
-
 
   &__link {
     display: inline-block;
@@ -69,7 +70,7 @@
       width: auto;
     }
 
-      &:hover {
+    &:hover {
       text-decoration: underline;
     }
   }
