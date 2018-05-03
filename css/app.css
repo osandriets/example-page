@@ -501,7 +501,7 @@ p {
   text-decoration: none;
   width: 155px;
   height: 70px;
-  background: no-repeat url("/static/img/crypto_trader.svg"); }
+  background: no-repeat url("https://osandriets.github.io/example-page/static/img/crypto_trader.svg"); }
   .logo__text {
     display: none; }
 
@@ -604,7 +604,7 @@ p {
 
 .jumbotron {
   background-color: #000;
-  background-image: url("/static/img/jumbotron_bg.svg");
+  background-image: url("https://osandriets.github.io/example-page/static/img/jumbotron_bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -737,7 +737,7 @@ p {
   text-transform: uppercase; }
 
 .icon--check {
-  background: no-repeat url("http://localhost:3001/static/img/check.svg");
+  background: no-repeat url("https://osandriets.github.io/example-page/static/img/check.svg");
   display: inline-block;
   width: 30px;
   height: 25px; }
