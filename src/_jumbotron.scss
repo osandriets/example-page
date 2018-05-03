@@ -1,6 +1,6 @@
 .jumbotron {
   background-color: $black;
-  background-image: url("http://localhost:3001/static/img/jumbotron_bg.svg");
+  background-image: url("/static/img/jumbotron_bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,11 +11,15 @@
 
   &__title {
     color: $white;
-    font-size: 86px;
+    font-size: 46px;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     margin-bottom: 50px;
+
+    @media screen and (min-width: map-get($breakpoints, m)) {
+      font-size: 86px;
+    }
   }
 
   &__text {
@@ -31,32 +35,39 @@
     }
   }
 
+  @media screen and (min-width: map-get($breakpoints, m)) {
+    &__box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__about {
+      width: 60%;
+    }
 
-  &__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__about {
-    width: 60%;
-  }
-
-  &__form {
-    width: 38%;
+    &__form {
+      width: 38%;
+    }
   }
 
   &__ul {
     padding-left: 40px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     li {
-      font-size: 32px;
+      font-size: 24px;
       text-transform: uppercase;
       color: $white;
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       margin-bottom: 16px;
+
+      @media screen and (min-width: map-get($breakpoints, m)) {
+        font-size: 32px;
+      }
 
       .icon--check {
         margin-left: -40px;

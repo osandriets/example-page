@@ -175,6 +175,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  max-width: 100%;
 }
 
 svg:not(:root) {
@@ -200,7 +201,7 @@ table {
 caption {
   padding-top: $table-cell-padding;
   padding-bottom: $table-cell-padding;
-  color: $text-muted;
+  color: $color-primary;
   text-align: left;
   caption-side: bottom;
 }

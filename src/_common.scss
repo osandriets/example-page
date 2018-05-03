@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 42px;
+  color: #494949;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: $color-primary;
+}
+
+.lead {
+  font-size: 24px;
+  font-weight: $font-weight-light;
+  margin-bottom: 30px;
+
+  b,
+  strong {
+    font-weight: $font-weight-regular;
+  }
+}
+
+p {
+  font-size: 18px;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.advantage {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: map-get($breakpoints, m)) {
+    &__group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 30px;
+
+    @media screen and (min-width: map-get($breakpoints, m)) {
+      width: 50%;
+    }
+
+    &--box {
+      width: 140px;
+    }
+
+    &--text {
+      width: 100%;
+    }
+  }
+}
+
+.brokers-img {
+  display: flex;
+  align-items: start;
+  margin-bottom: 50px;
+
+  &__item {
+    width: calc((100% - 30px) / 3);
+    max-width: 250px;
+    height: auto;
+
+    @media screen and (min-width: map-get($breakpoints, m)) {
+      width: calc((100% - 60px) / 3);
+    }
+
+    & + & {
+      margin-left: 10px;
+
+      @media screen and (min-width: map-get($breakpoints, m)) {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.how-it-works {
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: map-get($breakpoints, m)) {
+      width: 50%;
+    }
+
+    &--box {
+      width: 140px;
+    }
+
+    &--text {
+      flex: 1;
+    }
+
+    &--btn {
+      width: 100%;
+    }
+  }
+}
+
+.right-arrow {
+  display: none;
+
+  @media screen and (min-width: map-get($breakpoints, m)) {
+    display: block;
+  }
+}
+
+.left-arrow {
+  display: none;
+  text-align: right;
+
+  @media screen and (min-width: map-get($breakpoints, m)) {
+    display: block;
+  }
+}
+
+// ---------------------------------------------------
+.b-footer {
+  border-top: 1px solid #c7dfc1;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.important-note {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
