@@ -4,6 +4,7 @@
   ],
   "extends": "stylelint-config-standard",
   "rules": {
+    "at-rule-no-unknown": null,
     "plugin/selector-bem-pattern": {
       "preset": "bem",
       "utilitySelectors": "^\\.(u|l)-[a-z]+$",
