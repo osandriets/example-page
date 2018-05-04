@@ -71,6 +71,7 @@
 
 
 __webpack_require__(1);
+
 // --------------- preloader -------------------------------
 
 document.body.onload = function () {
@@ -90,6 +91,14 @@ window.onscroll = function () {
         navbar.classList.add("header--top");
     } else {
         navbar.classList.remove("header--top");
+    }
+};
+
+document.getElementById("burger").onclick = function (event) {
+    if (!this.classList.contains('burger--open')) {
+        this.classList.add('burger--open');
+    } else {
+        this.classList.remove('burger--open');
     }
 };
 
