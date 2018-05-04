@@ -7,9 +7,21 @@
   margin-right: -15px;
   margin-bottom: 0;
   display: none;
+  width: 100%;
+  flex-direction: column;
+  background: $black;
+  position: absolute;
+  top: 100%;
+  border-top: 3px solid $color-primary;
 
   @media screen and (min-width: map-get($breakpoints, m)) {
     display: flex;
+    flex-direction: row;
+    width: auto;
+    position: static;
+    top: auto;
+    background: transparent;
+    border-top: none;
   }
 
   &__link {
@@ -17,8 +29,12 @@
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     padding: 15px;
+
+    @media screen and (min-width: map-get($breakpoints, m)) {
+      font-size: 14px;
+    }
 
     &:hover {
       color: $color-primary;
