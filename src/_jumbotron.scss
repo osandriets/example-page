@@ -1,10 +1,10 @@
 .jumbotron {
   background-color: $black;
-  background-image: url("https://osandriets.github.io/example-page/static/img/jumbotron_bg.svg");
+  background-image: url($path-static + "/img/jumbotron_bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   padding-top: 130px;
   padding-bottom: 120px;
   background-attachment: fixed;
@@ -13,22 +13,22 @@
     color: $white;
     font-size: 46px;
     text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+
+    @extend %font-rc-bold;
 
     @media screen and (min-width: map-get($breakpoints, m)) {
       font-size: 88px;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.2px;
     }
   }
 
   &__text {
     color: $white;
     font-size: 26px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
     margin-bottom: 50px;
+
+    @extend %font-rc-light;
 
     &--bold {
       font-weight: 700;
@@ -63,16 +63,19 @@
       font-size: 24px;
       text-transform: uppercase;
       color: $white;
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 700;
       margin-bottom: 16px;
+      position: relative;
+
+      @extend %font-rc-bold;
 
       @media screen and (min-width: map-get($breakpoints, m)) {
         font-size: 32px;
       }
 
-      .icon--check {
-        margin-left: -40px;
+      .icon {
+        position: absolute;
+        left: -40px;
+        top: 4px;
       }
     }
   }

@@ -3,14 +3,14 @@
 require('./main.scss');
 // --------------- preloader -------------------------------
 
- document.body.onload = function () {
-     setTimeout(function () {
-         let preloader = document.getElementById('page-preloader');
-         if( !preloader.classList.contains('preloader--done')) {
-             preloader.classList.add('preloader--done');
-         }
-     }, 2000);
- }
+// document.body.onload = function () {
+//     setTimeout(function () {
+//         let preloader = document.getElementById('page-preloader');
+//         if( !preloader.classList.contains('preloader--done')) {
+//             preloader.classList.add('preloader--done');
+//         }
+//     }, 2000);
+// }
 
 window.onscroll = function() {
   let navbar = document.getElementById("header");
@@ -21,5 +21,14 @@ window.onscroll = function() {
       } else {
           navbar.classList.remove("header--top");
       }
+}
+
+document.getElementById("burger").onclick = function(event) {
+  if( !this.classList.contains('burger--open')) {
+    this.classList.add('burger--open');
+  }
+  else {
+     this.classList.remove('burger--open');
+  }
 }
 

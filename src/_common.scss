@@ -54,14 +54,14 @@ p {
     display: flex;
     flex-wrap: wrap;
 
-    @extend .row;
+    @extend %row;
   }
 
   &__item {
     display: flex;
     padding-top: 30px;
 
-    @extend .col;
+    @extend %col;
 
     @media screen and (min-width: map-get($breakpoints, m)) {
       width: 50%;
@@ -106,7 +106,7 @@ p {
     display: flex;
     flex-wrap: wrap;
 
-    @extend .row;
+    @extend %row;
   }
 
   &__item {
@@ -114,7 +114,7 @@ p {
     flex-wrap: wrap;
     margin-bottom: 30px;
 
-    @extend .col;
+    @extend %col;
 
     @media screen and (min-width: map-get($breakpoints, m)) {
       width: 50%;
