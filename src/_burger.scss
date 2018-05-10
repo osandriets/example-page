@@ -63,7 +63,8 @@
     }
 
     & + .nav-header {
-      display: flex;
+      left: 0;
+      opacity: 1;
     }
   }
 }

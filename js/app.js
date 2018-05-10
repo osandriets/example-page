@@ -111,10 +111,9 @@ document.getElementById("burger").onclick = function () {
 document.getElementsByClassName("nav-header")[0].onclick = function () {
   event.preventDefault();
   let burger = document.getElementById("burger");
-  if (!burger.classList.contains('burger--open')) {
-    burger.classList.add('burger--open');
-  } else {
+  if (burger.classList.contains('burger--open')) {
     burger.classList.remove('burger--open');
+    document.body.classList.remove('open-nav');
   }
 };
 
