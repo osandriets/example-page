@@ -600,7 +600,9 @@ p {
     font-size: 18px;
     padding: 15px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
     .nav-header__link:hover {
       background: #43b329;
       color: #fff;
