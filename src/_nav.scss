@@ -22,6 +22,11 @@
     width: 200px;
   }
 
+  .open-nav & {
+    left: 0;
+    opacity: 1;
+  }
+
   @media screen and (min-width: map-get($breakpoints, m)) {
     opacity: 1;
     display: flex;

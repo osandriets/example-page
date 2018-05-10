@@ -29,7 +29,7 @@ window.onscroll = function() {
 
 document.getElementById("burger").onclick = function() {
   event.preventDefault();
-  if( !this.classList.contains('burger--open')) {
+  if( !document.body.classList.contains('open-nav')) {
     this.classList.add('burger--open');
     document.body.classList.add('open-nav');
   }
@@ -42,7 +42,7 @@ document.getElementById("burger").onclick = function() {
 document.getElementsByClassName("nav-header")[0].onclick = function() {
   event.preventDefault();
   let burger = document.getElementById("burger");
-  if( burger.classList.contains('burger--open')) {
+  if( document.body.classList.contains('open-nav')) {
     burger.classList.remove('burger--open');
     document.body.classList.remove('open-nav');
   }

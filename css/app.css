@@ -571,6 +571,9 @@ p {
   transition: 0.25s ease-in-out; }
   .nav-header__item {
     width: 200px; }
+  .open-nav .nav-header {
+    left: 0;
+    opacity: 1; }
   @media screen and (min-width: 768px) {
     .nav-header {
       opacity: 1;
@@ -855,9 +858,6 @@ p {
             transform: rotate(-45deg);
     top: 39px;
     left: 8px; }
-  .burger--open + .nav-header {
-    left: 0;
-    opacity: 1; }
 
 .open-nav {
   overflow: hidden; }
