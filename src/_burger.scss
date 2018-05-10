@@ -6,6 +6,7 @@
   transition: 1s ease-in-out;
   cursor: pointer;
   display: block;
+  z-index: 1;
 
   @media screen and (min-width: map-get($breakpoints, m)) {
     display: none;

@@ -101,8 +101,10 @@ document.getElementById("burger").onclick = function () {
   event.preventDefault();
   if (!this.classList.contains('burger--open')) {
     this.classList.add('burger--open');
+    document.body.classList.add('open-nav');
   } else {
     this.classList.remove('burger--open');
+    document.body.classList.remove('open-nav');
   }
 };
 

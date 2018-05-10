@@ -542,7 +542,6 @@ p {
 
 .nav-header {
   list-style: none;
-  padding-left: 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -560,8 +559,14 @@ p {
           flex-direction: column;
   background: #000;
   position: absolute;
-  top: 100%;
+  top: 0;
+  height: 100vh;
+  padding-left: 0;
+  padding-top: 110px;
+  overflow: auto;
   border-top: 3px solid #43b329; }
+  .nav-header__item {
+    width: 200px; }
   @media screen and (min-width: 768px) {
     .nav-header {
       display: -webkit-box;
@@ -572,23 +577,34 @@ p {
           -ms-flex-direction: row;
               flex-direction: row;
       width: auto;
+      height: auto;
+      padding-top: 0;
       position: static;
       top: auto;
       background: transparent;
-      border-top: none; } }
+      border-top: none; }
+      .nav-header__item {
+        width: auto; } }
   .nav-header__link {
     color: #fff;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
-    padding: 15px; }
+    padding: 15px;
+    width: 100%;
+    text-align: center; }
+    .nav-header__link:hover {
+      background: #43b329;
+      color: #fff;
+      text-decoration: none; }
     @media screen and (min-width: 768px) {
       .nav-header__link {
-        font-size: 14px; } }
-    .nav-header__link:hover {
-      color: #43b329;
-      text-decoration: none; }
+        font-size: 14px; }
+        .nav-header__link:hover {
+          background: transparent;
+          color: #43b329;
+          text-decoration: none; } }
 
 .nav-footer {
   list-style: none;
@@ -785,7 +801,8 @@ p {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   cursor: pointer;
-  display: block; }
+  display: block;
+  z-index: 1; }
   @media screen and (min-width: 768px) {
     .burger {
       display: none; } }
@@ -833,5 +850,11 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+.open-nav {
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .open-nav {
+      overflow: auto; } }
 
 /*# sourceMappingURL=app.css.map*/

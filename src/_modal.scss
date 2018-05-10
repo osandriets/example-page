@@ -1,0 +1,7 @@
+.open-nav {
+  overflow: hidden;
+
+  @media screen and (min-width: map-get($breakpoints, m)) {
+    overflow: auto;
+  }
+}
